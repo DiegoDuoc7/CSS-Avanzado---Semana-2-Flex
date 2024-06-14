@@ -1,0 +1,138 @@
+/* Color Scheme */
+:root {
+    --salmon: #EF7F6D;
+    --carmine-pink: #E94F37;
+    --spanish-pink: #F7BFB6;
+    --soap: #CDC3E6;
+    --blue-bell: #A491D2;
+    --pale-lavender: #D4DCFF;
+    --outer-space: #444749;
+    --dark-jungle: #1B1F21;
+    --old-silver: #828485;
+    --platinum: #E8EBE4;
+    --white: #FFF;
+    --gray: #BEC1BB;
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+p, a, li, button {
+    font-weight: 300;
+}
+
+/* Font Sizes */
+.large-text {
+    font-size: 45px;
+}
+
+.medium-text {
+    font-size: 16px;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.x-small-text {
+    font-size: 10px;
+}
+
+/* Components */
+button.primary {
+    background-color: var(--salmon);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--medium-text);
+    cursor: pointer;
+}
+
+button.primary:hover {
+    background-color: var(--carmine-pink);
+}
+
+button.primary:focus {
+    outline: 2px solid var(--blue-bell);
+}
+
+/* Thumbnails */
+.tiny-thumbnail {
+    width: 10px;
+    height: 10px;
+}
+
+.normal-thumbnail {
+    width: 40px;
+    height: 40px;
+}
+
+/* Navigation */
+.nav-item {
+    font-size: var(--medium-text);
+    color: var(--outer-space);
+}
+
+.nav-item.active {
+    color: var(--salmon);
+}
+
+/* User Status */
+.user-status {
+    color: var(--old-silver);
+}
+
+.user-status.active {
+    color: var(--salmon);
+}
+
+.container-fluid {
+    display: flex;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+.btn-nuevo-chat {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    background-color: #a226a2; 
+    color: white;
+    padding: 1rem 2rem; 
+    border-radius: 0.5rem; 
+}
+.list-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.list-group-item {
+    display: flex;
+    align-items: center;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.img-max-size {
+    max-width: 100px;  
+    max-height: 100px;      
+    object-fit: cover;  
+}
+
+
